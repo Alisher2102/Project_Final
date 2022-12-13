@@ -38,3 +38,38 @@ function adapt(){
         a.className="navbar";
     }
 }
+//finder function
+function searcher(){
+    var input;
+    input=document.querySelector(".searcher");
+    input=input.value.toUpperCase();
+    var lists=document.querySelectorAll(".navbar a");
+    for(var i=0;i<lists.length;i++){
+        if(lists[i].text.toUpperCase().indexOf(input)>-1){
+            lists[i].style.visibility="visible";
+        }
+        else{
+            lists[i].style.visibility="hidden";
+        }
+    }
+}
+//carousel
+var index=1;
+carousel(index);
+function plusSlides(n){
+    carousel(index+=n);
+}
+function carousel(n){
+    var i;
+    var slides=document.querySelectorAll(".slide");
+    if(n>slides.length){
+        index=1;
+    }
+    if(n<1){
+        index=slides.length;
+    }
+    for(i=0;i<slides.length;i++){
+        slides[i].style.display="none";
+    }
+    slides[index-1].style.display="flex";
+}
