@@ -9,34 +9,77 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital@1&family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="navbar" id="navbarID"> 
-        <img src="https://sdu.edu.kz/wp-content/uploads/2019/09/SDU-logo@2x.svg" alt="" style="width: 100px;">
-        <a href="" class="title">  SDU shop</a>
+    <div class="navbar"> 
+        <img src="logo-removebg-preview.png"  alt="">
+        <div style="display: flex; justify-content: space-between;     align-items: center; width: 300px;">
+            <a href="" class="title">SDU shop</a>
+            <input type="text" onkeyup="searcher()" class="searcher" placeholder="Search..." name="" id="" >
+        </div>
         <div class="categories">
             <a href="">Products</a>
             <a href="">Categories</a>
         </div>
         <div class="prof">
-            <a href="">Busket</a>
-            <a href="">Registration</a>
-            <a href="">Profile</a>
+            <a href=""><i style="font-size:28px" class="fa">&#xf291;</i> Basket</a>
+            <a href=""><i class="fa fa-fw fa-user"></i>Registration</a>
+            <a href=""><i class="fa fa-male"></i> Profile</a>
         </div>
         <a href="javascript:void(0)" class="icon" onclick="adapt()"><i class="fa fa-bars"></i></a>
     </div>
     <div class="carouselImgs">
         <div class="sldies fade">
-            <img src="https://www.masterclass.com/cdn-cgi/image/width=1920,quality=75,format=webp/https://images.ctfassets.net/3s5io6mnxfqz/3N5iXB8yNlqVQS3xWdIIgX/fa0d654680fbd64eb5852dbbbcf4cca4/AdobeStock_303371265.jpeg" >
+            <img src="https://the-steppe.com/pictures/files/Aidana/Aid2/htmlimage(1).jpeg" >
         </div>
         <div class="sldies fade">
-            <img src="https://npr.brightspotcdn.com/dims4/default/abec1bb/2147483647/strip/true/crop/867x534+12+0/resize/880x542!/quality/90/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F03%2F9c%2F3a2e47fc412a857e60875267fc30%2Fclothing-istock-vectorikart-2021-0730.jpg">
+            <img src="https://centralasia.news/uploads/posts/2021-04/1619506711_futbolka-kazak-repablik.jpg">
         </div>
         <div class="sldies fade">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStn-MtID2dZPKfdnzZmgF1kzehZSZSyIrXRw&usqp=CAU" >
+            <img src="https://sxodim.com/uploads/posts/2021/11/09/optimized/eaadc58f3286857374fbdf7ea189deea_545x305-q-85.jpg" >
         </div>
+    </div> 
+    <div class="whatarewe">
+        <p> <strong class="esdeu">What</strong> <strong class="esdeu">are</strong> <strong class="esdeu">we</strong> <strong class="esdeu">?</strong> </p>
+        <p> <strong class="esdeu">We</strong> <strong class="esdeu">are</strong> <strong class="sdu">SDU</strong>  <strong class="esdeu">shop</strong></p>
+        <p> <strong class="sdu">SDU</strong>  <strong class="esdeu">shop</strong> <strong class="esdeu">has</strong> <strong class="esdeu">all</strong> <strong class="esdeu">the</strong> <strong class="esdeu">merchandise</strong> <strong class="esdeu">that</strong> <strong class="esdeu">students</strong> <strong class="esdeu">can</strong> <strong class="esdeu">purchuase</strong></p>
     </div>
-    
+    <div class="threeImgs">
+        <img src="https://weproject.media/upload/medialibrary/80f/80f034349960bc514c6876e3c54fbce1.jpg" alt="">
+        <img src="https://qazaquni.kz/wp-content/uploads/2019/09/2019090704401692.jpg" alt="">
+        <img src="https://i.pinimg.com/736x/74/7f/2f/747f2fac465576de260a2be95e5077da.jpg" alt="">
+    </div>
+    <div class="toSee">
+        <div class="text">
+            <p>Come up to <br> see our <br> designs</p>
+            
+        </div>
+        <div class="circuit">
+            <div class="slide">
+                <img src="https://the-steppe.com/pictures/files/Aidana/Aid2/htmlimage(1).jpeg" >
+                <div class="pointers">
+                    <a class="prev" onclick="plusSlides(-1)">❮</a>
+                    <a class="next" onclick="plusSlides(1)">❯</a>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="https://centralasia.news/uploads/posts/2021-04/1619506711_futbolka-kazak-repablik.jpg">
+                <div class="pointers">
+                    <a class="prev" onclick="plusSlides(-1)">❮</a>
+                    <a class="next" onclick="plusSlides(1)">❯</a>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="https://sxodim.com/uploads/posts/2021/11/09/optimized/eaadc58f3286857374fbdf7ea189deea_545x305-q-85.jpg" >
+                <div class="pointers">
+                    <a class="prev" onclick="plusSlides(-1)">❮</a>
+                    <a class="next" onclick="plusSlides(1)">❯</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
     <script src="index.js"></script>
 </body>
 </html>
