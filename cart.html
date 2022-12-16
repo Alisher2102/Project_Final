@@ -34,12 +34,13 @@
     </div>
     <a href="javascript:void(0)" class="icon" onclick="adapt()"><i class="fa fa-bars"></i></a>
   </div>
+  <div style="display: flex; justify-content: center;">
   <div class="main">
     <div class="items">
-      <h1 style="margin: 0px; padding: 20px; border-bottom: solid;border-width: thin;border-color: rgb(210, 205, 205);">
+      <h1 style="margin: 0px; padding: 20px; border-bottom: solid;border-width: 2px;border-color: rgb(210, 205, 205);">
         My cart</h1>
       <div class="item">
-        <img
+        <img id="photo"
           src="https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/hd3/h02/33307092123678/qazaq-republic-50149-00972-s-nadpisu-bezevaa-s-100646050-1.jpg"
           alt="">
         <div class="descr">
@@ -56,14 +57,14 @@
           </div>
           <p id="price">20 000₸</p>
         </div>
-        <div>
-        <div><button id="close"><span class="material-symbols-outlined">cancel</span></button></div>
-        <div style="display: flex;justify-content: space-between;">
-          <span class="material-symbols-outlined" id="add">add_circle</span>
-          <input type="text" id="quantity" value="1">
-          <span class="material-symbols-outlined">do_not_disturb_on</span>
+        <div style="text-align: right;align-self: self-start;">
+          <button id="close"><span class="material-symbols-outlined">cancel</span></button>
+          <div class="quan">
+            <span class="material-symbols-outlined" id="add">add_circle</span>
+            <input type="text" id="quantity" value="1">
+            <span class="material-symbols-outlined " id="minus">do_not_disturb_on</span>
+          </div>
         </div>
-      </div>
       </div>
       <div class="item">
         <img
@@ -83,9 +84,38 @@
           </div>
           <p id="price">15 000₸</p>
         </div>
-        <button id="close"><span class="material-symbols-outlined">cancel</span></button>
+        <div style="text-align: right;align-self: self-start;">
+          <button id="close"><span class="material-symbols-outlined">cancel</span></button>
+          <div class="quan">
+            <span class="material-symbols-outlined" id="add">add_circle</span>
+            <input type="text" id="quantity" value="1">
+            <span class="material-symbols-outlined" id="minus">do_not_disturb_on</span>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <div class="total">
+      <h1 style="margin: 0px; padding: 20px; border-bottom: solid;border-width: 2px;border-color: rgb(210, 205, 205);">Total</h1>
+      <div class="subTotal">
+        <p style=" margin: 5;"><b>Sub-total</b></p>
+        <p style="font-size:1.2rem; margin:5"><i>35 000₸</i></p>
+      </div>
+      <div class="delivery">
+        <p style="margin:5"><b>Delivery</b></p>
+        <p style="font-size:1.2rem; margin: 5; "><i>Standard delivery(5 000₸)</i></p>
+      </div>
+      <div class="paid">
+        <p>To be paid:</p>
+        <p id="finalorder">40 000₸</p>
+      </div>
+      <button class="order">Place an order</button>
+      <div class="accept">
+        <p><b>WE ACCEPT:</b></p>
+        <img src="https://usabilitylab.ru/wp-content/uploads/blog/kazahstan/BK1.png" alt="" height="130rem">
       </div>
     </div>
   </div>
+</div>
 </body>
 </html>
