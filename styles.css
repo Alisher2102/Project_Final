@@ -2,6 +2,49 @@ body{
     background-color: #FFFBE9;
     margin: 0;
 }
+.reg{
+    display: flex;
+    justify-content: center;     
+}
+.reg form:hover{
+    box-shadow: 10px 10px 100px lightblue;
+    transition: box-shadow 1s;
+}
+.reg input{
+    border-radius: 10px;
+    font-size: 1.8rem;
+    width: 30rem;
+    height: 5rem;
+    display: block;
+}
+.reg input:placeholder-shown{
+    font-family: 'Bebas Neue', cursive;
+}
+.reg input[type=text]:focus{
+    background-color: #ADA2FF;
+    box-shadow: 10px 10px 100px lightblue;
+    transition: background-color 1s,box-shadow 1s;
+}
+.reg input[type=email]:focus{
+    background-color: #ADA2FF;
+    box-shadow: 10px 10px 100px lightblue;
+
+    transition: background-color 1s,box-shadow 1s;
+}
+.reg input[type=password]:focus{
+    box-shadow: 10px 10px 100px lightblue;
+    background-color: #ADA2FF;
+    transition: background-color 1s,box-shadow 1s;
+}
+.reg button{
+    border-radius: 10px;
+    font-family: 'Bebas Neue', cursive;
+    background-color: #C0DEFF;
+    font-size: 1.8rem;
+    width: 30rem;
+    height: 5rem;
+}
+
 .title{
     display: inline-block;
 }
