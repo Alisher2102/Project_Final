@@ -299,8 +299,10 @@ body{
     }
 }
 .main{
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-areas: "items total";
+  grid-gap: 10px;
+  justify-content: space-around;
   padding-top: 20px;
 }
 .items{
@@ -308,12 +310,11 @@ body{
   border-style: solid;
   border-color: white;
   border-radius: 10px;
-  
+  padding: 10px;
 }
 .item{
-    /* display: flex; */
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr; 
     font-size: 2rem;
     border-bottom: solid;
     border-width: thin;
@@ -352,6 +353,7 @@ body{
     border: none;
     background: none;
     cursor: pointer;
+    margin-bottom: 100px;
 }
 #add{
     border: none;
@@ -369,4 +371,62 @@ body{
     border-radius: 8px;
     text-align: center;
     border-color: gainsboro;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.quan{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 15px;
+    margin-right: 10px;
+}
+.total{
+    background-color: white;
+    border-style: solid;
+    border-color: white;
+    border-radius: 10px;
+    height: min-content;
+    padding: 10px;
+  }
+.subTotal{
+    font-size: 1.5rem;
+    color: coral;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.delivery{
+    color:slateblue;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid;
+    border-width: thin;
+    border-color: rgb(210, 205, 205);
+    margin-bottom: 10px;
+}
+.order{
+    width: -webkit-fill-available;
+    height: 70px;
+    border: none;
+    background:#678983;
+    cursor: pointer;
+    border-radius: 10px;
+    color: white;
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
+}
+.paid{
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#finalorder{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.accept{
+    font-size: 1rem;
 }
