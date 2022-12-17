@@ -1,0 +1,138 @@
+*, *::after, *::before,*:hover{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+}
+
+.menu{
+    width: 20%;
+}
+
+header{
+    position: sticky;
+}
+
+.header-mobile{
+    display: flex;
+    position: sticky;
+    align-items: center;
+    width: 100%;
+    height: 46px;
+    background: linear-gradient(cyan,white);
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    background-color: bisque;
+}
+
+.logo{
+    width: 100%;
+    font-size: 24px;
+    text-align: center;
+    content: '';
+    font-family: 'Unbounded', cursive;
+    color: cadetblue;
+}
+
+.basket{
+    display: flex;
+    align-items: center;
+    color: aliceblue;
+    justify-content: center;
+    width: 52px;
+    height: 100%;
+    background-color: crimson;
+}
+
+.menu-hide-btn{
+    width: 52px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: cadetblue;
+}
+
+.poloska{
+    display: inline-block;
+    border: solid 1px #14da;
+    border-radius: 6px;
+    width: 60%;
+    height: 4px;
+    content: '';
+    margin: 3px 16px;
+    background-color: #14da;
+}
+
+.cont_wrap{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    background-color: aliceblue;
+}
+
+.card{
+    width: 25%;
+    padding: 5px;
+}
+
+.pr_img {
+    overflow: hidden;
+}
+
+.product{
+    width: 100%;
+    align-items: center;
+    background-color: rgb(145, 239, 234);
+    border: darkgrey 1px solid;
+    border-radius: 6px;
+    padding: 5px;
+}
+
+.price{
+    display: flex;
+    justify-content: space-between;
+}
+
+.old{
+    text-decoration: line-through;
+}
+
+@media only screen and (min-width: 960px){
+    .header-mobile{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    .container{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .container{
+        width: 100%;
+        top: 48px;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .cont_wrap{
+        width: 100%;
+    }
+
+    .card{
+        width: 33%;
+    }
+}
