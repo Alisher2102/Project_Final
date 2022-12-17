@@ -36,78 +36,103 @@
   </div>
   <div style="display: flex; justify-content: center;">
   <div class="main">
-    <div class="items">
-      <h1 style="margin: 0px; padding: 20px; border-bottom: solid;border-width: 2px;border-color: rgb(210, 205, 205);">
+    <div class="cart">
+      <h1 id="cart" style="margin: 0px; padding: 20px; border-bottom: solid;border-width: 2px;border-color: rgb(210, 205, 205);">
         My cart</h1>
-      <div class="item">
-        <img id="photo"
-          src="https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/hd3/h02/33307092123678/qazaq-republic-50149-00972-s-nadpisu-bezevaa-s-100646050-1.jpg"
-          alt="">
-        <div class="descr">
-          <p id="name">Beige hoodie</p>
-          <div class="size">
-            <p>Size:</p>
-            <select name="sizes" style="border: none; background:aquamarine;">
-              <option value="S">S</option>
-              <option value="M">M</option>
-              <option value="L">L</option>
-              <option value="XL">XL</option>
-              <option value="XXL">XXL</option>
-            </select>
+      <div class="items">
+        <div class="item">
+          <img id="photo"
+            src="https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/hd3/h02/33307092123678/qazaq-republic-50149-00972-s-nadpisu-bezevaa-s-100646050-1.jpg"
+            alt="">
+          <div class="descr">
+            <p id="name">Beige hoodie</p>
+            <div class="size">
+              <p>Size:</p>
+              <select name="sizes" style="border: none; background:aquamarine;">
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+                <option value="XXL">XXL</option>
+              </select>
+            </div>
+            <p class="price">20000₸</p>
           </div>
-          <p id="price">20 000₸</p>
+          <div style="text-align: right;align-self: self-start;">
+            <button class="close" ><span class="material-symbols-outlined">cancel</span></button>
+            <div class="quan">
+              <p style="font-size:20px">Quantity:</p>
+              <input type="number" class="quantity" value="1" min="1" max="99">
+            </div>
+          </div>
         </div>
-        <div style="text-align: right;align-self: self-start;">
-          <button id="close"><span class="material-symbols-outlined">cancel</span></button>
-          <div class="quan">
-            <span class="material-symbols-outlined" id="add">add_circle</span>
-            <input type="text" id="quantity" value="1">
-            <span class="material-symbols-outlined " id="minus">do_not_disturb_on</span>
+        <div class="item">
+          <img
+            src="https://simg.marwin.kz/media/catalog/product/cache/41deb699a7fea062a8915debbbb0442c/q/a/qazaq_republic_3.jpeg"
+            alt="">
+          <div class="descr">
+            <p id="name">Burgundy sweatshirt</p>
+            <div class="size">
+              <p>Size:</p>
+              <select name="sizes" style="border: none; background:aquamarine;">
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+                <option value="XXL">XXL</option>
+              </select>
+            </div>
+            <p class="price">15000₸</p>
+          </div>
+          <div style="text-align: right;align-self: self-start;">
+            <button class="close" ><span class="material-symbols-outlined">cancel</span></button>
+            <div class="quan">
+              <p style="font-size:20px">Quantity:</p>
+              <input type="number" class="quantity" value="1" min="1" max="99">
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img
+            src="https://simg.marwin.kz/media/catalog/product/cache/41deb699a7fea062a8915debbbb0442c/q/a/qazaq_republic_3.jpeg"
+            alt="">
+          <div class="descr">
+            <p id="name">Burgundy sweatshirt</p>
+            <div class="size">
+              <p>Size:</p>
+              <select name="sizes" style="border: none; background:aquamarine;">
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+                <option value="XXL">XXL</option>
+              </select>
+            </div>
+            <p class="price">15000₸</p>
+          </div>
+          <div style="text-align: right;align-self: self-start;">
+            <button class="close" ><span class="material-symbols-outlined">cancel</span></button>
+            <div class="quan">
+              <p style="font-size:20px">Quantity:</p>
+              <input type="number" class="quantity" value="1" min="1" max="99">
+            </div>
           </div>
         </div>
       </div>
-      <div class="item">
-        <img
-          src="https://simg.marwin.kz/media/catalog/product/cache/41deb699a7fea062a8915debbbb0442c/q/a/qazaq_republic_3.jpeg"
-          alt="">
-        <div class="descr">
-          <p id="name">Burgundy sweatshirt</p>
-          <div class="size">
-            <p>Size:</p>
-            <select name="sizes" style="border: none; background:aquamarine;">
-              <option value="S">S</option>
-              <option value="M">M</option>
-              <option value="L">L</option>
-              <option value="XL">XL</option>
-              <option value="XXL">XXL</option>
-            </select>
-          </div>
-          <p id="price">15 000₸</p>
-        </div>
-        <div style="text-align: right;align-self: self-start;">
-          <button id="close"><span class="material-symbols-outlined">cancel</span></button>
-          <div class="quan">
-            <span class="material-symbols-outlined" id="add">add_circle</span>
-            <input type="text" id="quantity" value="1">
-            <span class="material-symbols-outlined" id="minus">do_not_disturb_on</span>
-          </div>
-        </div>
-      </div>
-      
     </div>
     <div class="total">
       <h1 style="margin: 0px; padding: 20px; border-bottom: solid;border-width: 2px;border-color: rgb(210, 205, 205);">Total</h1>
       <div class="subTotal">
         <p style=" margin: 5;"><b>Sub-total</b></p>
-        <p style="font-size:1.2rem; margin:5"><i>35 000₸</i></p>
+        <p class="subtotal1"><i>35000₸</i></p>
       </div>
       <div class="delivery">
         <p style="margin:5"><b>Delivery</b></p>
-        <p style="font-size:1.2rem; margin: 5; "><i>Standard delivery(5 000₸)</i></p>
+        <p style="font-size:1.2rem; margin: 5; "><i>Standard delivery(5000₸)</i></p>
       </div>
       <div class="paid">
         <p>To be paid:</p>
-        <p id="finalorder">40 000₸</p>
+        <p class="finalorder">40000₸</p>
       </div>
       <button class="order">Place an order</button>
       <div class="accept">
@@ -117,5 +142,6 @@
     </div>
   </div>
 </div>
+  <script src="cart.js"></script>
 </body>
 </html>
