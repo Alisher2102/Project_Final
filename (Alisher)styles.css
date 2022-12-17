@@ -2,15 +2,78 @@ body{
     background-color: #FFFBE9;
     margin: 0;
 }
+.centralise{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+.profile1{
+    padding: 10px;
+    border-width: 2.5px;
+    border-color:#678983;
+    border-radius: 10px;
+    background-color: #BAD7E9;
+    border-style: solid;
+    width: 35rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2.5rem;
+}
+.profile{
+    padding: 10px;
+    border-width: 2.5px;
+    border-color:#678983;
+    border-radius: 10px;
+    background-color: #BAD7E9;
+    border-style: solid;
+    width: 35rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.5rem;
+}
+.profile label{
+    font-family: 'Bebas Neue', cursive;
+}
+.error{
+    display:flex;
+    justify-content:center;
+    font-family: 'Bebas Neue', cursive;
+}
+.error h1{
+    font-size: 3rem;
+    color: #DC0000;
+}
 .reg{
     display: flex;
     justify-content: center;     
 }
+.reg h1{
+    display: flex;
+    justify-content: center;
+    font-family: 'Bebas Neue', cursive;
+}
+.reg form button{
+    transition-duration:.5s;
+    transition-property: color;
+}
+.reg form button:hover{
+    color: #439A97;
+    cursor: pointer;
+}
+.reg form{
+    transition-duration:1s;
+    transition-property: box-shadow;
+}
 .reg form:hover{
     box-shadow: 10px 10px 100px lightblue;
-    transition: box-shadow 1s;
+
 }
 .reg input{
+    padding: 10px;
     border-radius: 10px;
     font-size: 1.8rem;
     width: 30rem;
@@ -20,21 +83,29 @@ body{
 .reg input:placeholder-shown{
     font-family: 'Bebas Neue', cursive;
 }
+.reg input[type=text]{
+    transition-duration:1s;
+    transition-property: box-shadow, background-color;
+}
 .reg input[type=text]:focus{
     background-color: #ADA2FF;
     box-shadow: 10px 10px 100px lightblue;
-    transition: background-color 1s,box-shadow 1s;
+}
+.reg input[type=email]{
+    transition-duration:1s;
+    transition-property: box-shadow, background-color;
 }
 .reg input[type=email]:focus{
     background-color: #ADA2FF;
     box-shadow: 10px 10px 100px lightblue;
-
-    transition: background-color 1s,box-shadow 1s;
+}
+.reg input[type=password]{
+    transition-duration:1s;
+    transition-property: box-shadow, background-color;
 }
 .reg input[type=password]:focus{
     box-shadow: 10px 10px 100px lightblue;
     background-color: #ADA2FF;
-    transition: background-color 1s,box-shadow 1s;
 }
 .reg button{
     border-radius: 10px;
@@ -118,6 +189,8 @@ body{
     margin-top: 0;
     margin-bottom: 0;
     font-size: 34px;
+    transition-duration:1s;
+    transition-property: color, transform;
 }
 .navbar a:visited{
     text-decoration: none;
@@ -134,7 +207,6 @@ body{
     /* animation-iteration-count: 3; */
     color: #393E46;
     transform: translateY(-5px);
-    transition: color 1s, transform 1s;
 }
 .navbar .icon{
     display: none;
@@ -163,9 +235,7 @@ body{
     text-align: center;
     font-size: 64px;
 }
-.sdu{
-    color: #009EFF;
-}
+
 .threeImgs{
     display: flex;
     justify-content: center;
@@ -177,20 +247,28 @@ body{
     border-radius: 5px;
     width: 25rem;
     height: 25rem;
+    transition-duration:1s;
+    transition-property:transform, border-color, box-shadow;
 }
 .threeImgs img:hover{
     transform: translateY(-20px);
-    transition: transform 1s, border-color 1s, box-shadow 1s;
     border-color: #009EFF;
     cursor: pointer;
     box-shadow: 10px 10px 100px lightblue;
 }
+.esdeu{
+    transition-duration:1s;
+    transition-property:color, transform;
+}
 .esdeu:hover{
     display: inline-block;
-    transform: translateY(-10px);
     transform: skewX(-20deg);
-    transition: transform 1s, color .5s;
     color: #009EFF;
+}
+.sdu{
+    color: #009EFF;
+    transition-duration:1s;
+    transition-property:color, transform, font-size, margin-left,margin-right;
 }
 .sdu:hover{
     margin-left: 10px;
@@ -198,7 +276,6 @@ body{
     display: inline-block;
     transform: translateY(-10px);
     transform: rotate(360deg);
-    transition: transform 1s, font-size 1s, color 1s, margin-left 1s, margin-right 1s;
     font-size: 128px;
     color: #C147E9;
 }
@@ -209,15 +286,20 @@ body{
     font-family: 'Bebas Neue', cursive;
     font-size: 128px;
 }
+.text{
+    transition-duration:2s;
+    transition-property:color;
+}
 .text:hover{
-    color: #000000;
-    transition: color 2s;
+    color: #b16464;
 }
 
 .slide{
     display: flex;
     justify-content: center;
     align-items: center;
+    transition-duration:1s;
+    transition-property:border-color, box-shadow;
 }
 .slide img{ 
     width: 50rem;
@@ -229,7 +311,6 @@ body{
 }
 .slide:hover{
     border-color: #fadddd;
-    transition:  border-color 1s, box-shadow 1s;
     box-shadow: 10px 10px 100px rgb(168, 108, 108);
 }
 .pointers{
@@ -314,6 +395,10 @@ body{
     }   
     .navbar.responsive{
         position: relative;
+        display: block;
+    }
+    .navbar{
+        display: block;
     }
     .navbar.responsive .icon{
         position: absolute;
