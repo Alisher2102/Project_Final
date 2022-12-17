@@ -305,12 +305,21 @@ body{
   justify-content: space-around;
   padding-top: 20px;
 }
+.cart{
+  background-color: white;
+  border-style: solid;
+  border-color: white;
+  border-radius: 10px;
+  padding: 10px;
+ 
+}
 .items{
   background-color: white;
   border-style: solid;
   border-color: white;
   border-radius: 10px;
   padding: 10px;
+  /* height: min-content; */
 }
 .item{
     display: grid;
@@ -323,6 +332,7 @@ body{
     align-items: center;
 }
 .item img{
+    transition: 0.4s;
     width: 150;
     height: 170;
     margin: 20px;
@@ -336,7 +346,7 @@ body{
     border: 1px;
     transition: 0.4s;
 } */
-#price{
+.price{
     font-size: 1.5rem;
     font-weight: bold;
 }
@@ -349,13 +359,13 @@ body{
     display: flex;
     align-items: center;
 }
-#close{
+.close{
     border: none;
     background: none;
     cursor: pointer;
     margin-bottom: 100px;
 }
-#add{
+/* #add{
     border: none;
     background: none;
     cursor: pointer;
@@ -364,9 +374,9 @@ body{
     border: none;
     background: none;
     cursor: pointer;
-}
-#quantity{
-    width: 25px;
+} */
+.quantity{
+    width: 40px;
     height: 25px;
     border-radius: 8px;
     text-align: center;
@@ -379,6 +389,7 @@ body{
     justify-content: flex-end;
     margin-top: 15px;
     margin-right: 10px;
+    align-items: center;
 }
 .total{
     background-color: white;
@@ -407,7 +418,8 @@ body{
     margin-bottom: 10px;
 }
 .order{
-    width: -webkit-fill-available;
+    transition: 0.4s;
+    width: 100%;
     height: 70px;
     border: none;
     background:#678983;
@@ -417,16 +429,27 @@ body{
     font-size: 2rem;
     font-family: 'Poppins', sans-serif;
 }
+.subTotal1{
+    font-size:1.2rem; 
+    margin:5
+}
 .paid{
     font-size: 1.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-#finalorder{
+.finalorder{
     font-size: 2rem;
     font-weight: bold;
 }
 .accept{
     font-size: 1rem;
+}
+.order:hover{
+    box-shadow: 10px 10px 10px 0 rgba(0,0,0,0.24);
+    background-color: #81a7a0;
+}
+.item img:hover{
+    transform: translateY(-10px);
 }
