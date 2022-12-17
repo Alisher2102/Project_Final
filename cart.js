@@ -16,7 +16,6 @@ for (var i=0; i<removeButtons.length; i++){
     });
 };
 function updateTotal(){
-    //var cartItems = document.getElementsByClassName('item');
     var total = 0;
     for (var i=0; i<items.length; i++){
         var item = items[i];
@@ -24,9 +23,7 @@ function updateTotal(){
         var itemQuantity = item.getElementsByClassName('quantity')[0];
         var price = itemPrice.innerText.replace('₸', '');
         var quantity = itemQuantity.value;
-        console.log(price,quantity)
         total += price * quantity;
-        
     }
     document.getElementsByClassName('subTotal1')[0].innerText = total + '₸';
     if(items.length!=0)
