@@ -17,7 +17,6 @@
     error_reporting(0);
 
     if ($_COOKIE['user'] == '') :
-
     ?>
         <link rel="stylesheet" href="styles.css">
 
@@ -33,7 +32,7 @@
             </div>
             <div class="prof">
                 <a href=""><i style="font-size:28px" class="fa">&#xf291;</i> Basket</a>
-                <a href="exit.php"><i class="fa fa-fw fa-user"></i>Log out</a>
+                <a href="exit.php"><i class="fa fa-fw fa-user"></i>Registration</a>
                 <a href="profile.php"><i class="fa fa-male"></i> Profile</a>
             </div>
             <a href="javascript:void(0)" class="icon" onclick="adapt()"><i class="fa fa-bars"></i></a>
@@ -53,6 +52,7 @@
         <h1 style="display:flex; justify-content:center;     font-family: 'Bebas Neue', cursive;">Already have an account?
             <a href="login.php"> Login now</a>
         </h1>
+        <script src="index.js"></script>
     <?php else : ?>
         <link rel="stylesheet" href="styles.css">
         <div class="navbar">
