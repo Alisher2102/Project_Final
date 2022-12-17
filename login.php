@@ -14,11 +14,12 @@
 
 
 <body>
+
     <link rel="stylesheet" href="styles.css">
     <div class="navbar">
         <img src="logo-removebg-preview.png" alt="">
         <div style="display: flex; justify-content: space-between;align-items: center; width: 300px;">
-            <a href="" class="title">SDU shop</a>
+            <a href="index.php" class="title">SDU shop</a>
             <input type="text" onkeyup="searcher()" class="searcher" placeholder="Search..." name="" id="">
         </div>
         <div class="categories">
@@ -28,21 +29,23 @@
         <div class="prof">
             <a href=""><i style="font-size:28px" class="fa">&#xf291;</i> Basket</a>
             <a href="exit.php"><i class="fa fa-fw fa-user"></i>Registration</a>
-            <a href=""><i class="fa fa-male"></i> Profile</a>
+            <a href="profile.php"><i class="fa fa-male"></i> Profile</a>
         </div>
         <a href="javascript:void(0)" class="icon" onclick="adapt()"><i class="fa fa-bars"></i></a>
     </div>
     <h1 style="display:flex; justify-content:center; padding-top:5rem;font-family: 'Bebas Neue', cursive;">Log in</h1>
     <div class="reg">
+
         <form action="auth.php" method="post">
             <input type="text" name="Login" id="" placeholder="Login">
             <input type="password" name="password" id="" placeholder="Password">
-            <button type="submit">Log In</button>
+            <button type="submit" name="submit">Log In</button>
         </form>
     </div>
     <h1 style="display:flex; justify-content:center; font-family: 'Bebas Neue', cursive;"> Don't have an account? <a href="index.php">Register now</a></h1>
 
     <script src="index.js"></script>
+
 </body>
 
 
