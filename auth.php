@@ -1,10 +1,3 @@
-<?php
-
-if ($_POST["Login"] == '' || $_POST["password"] == '') {
-    header("Location: login.php");
-    exit();
-}
-?>
 <html lang="en">
 
 <head>
@@ -36,7 +29,7 @@ if ($_POST["Login"] == '' || $_POST["password"] == '') {
     <link rel="stylesheet" href="styles.css">
     <div class="navbar">
         <img src="logo-removebg-preview.png" alt="">
-        <div style="display: flex; justify-content: space-between;align-items: center; width: 300px;">
+        <div style="display: flex; justify-content: space-between;align-items: center; width: 350px;">
             <a href="index.php" class="title">SDU shop</a>
             <input type="text" onkeyup="searcher()" class="searcher" placeholder="Search..." name="" id="">
         </div>
