@@ -299,26 +299,26 @@ body{
     }
 }
 .main{
-  display: grid;
-  grid-template-areas: "items total";
-  grid-gap: 10px;
-  justify-content: space-around;
-  padding-top: 20px;
+    display: grid;
+    grid-template-areas: "items total";
+    grid-gap: 10px;
+    justify-content: space-around;
+    padding-top: 20px;
 }
 .cart{
-  background-color: white;
-  border-style: solid;
-  border-color: white;
-  border-radius: 10px;
-  padding: 10px;
- 
+    background-color: white;
+    border-style: solid;
+    border-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    height: min-content;
 }
 .items{
-  background-color: white;
-  border-style: solid;
-  border-color: white;
-  border-radius: 10px;
-  padding: 10px;
+    background-color: white;
+    border-style: solid;
+    border-color: white;
+    border-radius: 10px;
+    padding: 10px;
 }
 .items h1{
     text-align: center;
