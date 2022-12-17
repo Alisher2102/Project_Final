@@ -22,7 +22,7 @@
 
         <div class="navbar">
             <img src="logo-removebg-preview.png" alt="">
-            <div style="display: flex; justify-content: space-between;align-items: center; width: 300px;">
+            <div style="display: flex; justify-content: space-between;align-items: center; width: 350px;">
                 <a href="" class="title">SDU shop</a>
                 <input type="text" onkeyup="searcher()" class="searcher" placeholder="Search..." name="" id="">
             </div>
@@ -52,12 +52,13 @@
         <h1 style="display:flex; justify-content:center;     font-family: 'Bebas Neue', cursive;">Already have an account?
             <a href="login.php"> Login now</a>
         </h1>
+
         <script src="index.js"></script>
     <?php else : ?>
         <link rel="stylesheet" href="styles.css">
         <div class="navbar">
             <img src="logo-removebg-preview.png" alt="">
-            <div style="display: flex; justify-content: space-between;align-items: center; width: 300px;">
+            <div style="display: flex; justify-content: space-between;align-items: center; width: 350px;">
                 <a href="" class="title">SDU shop</a>
                 <input type="text" onkeyup="searcher()" class="searcher" placeholder="Search..." name="" id="">
             </div>
@@ -95,7 +96,7 @@
         </div>
         <div class="toSee">
             <div class="text">
-                <p>Come up to <br> see our <br> designs</p>
+                <p>Come to <br> see our <br> designs</p>
 
             </div>
             <div class="circuit">
@@ -122,6 +123,20 @@
                 </div>
             </div>
 
+        </div>
+        <div class="footer">
+            <div style="display: flex; justify-content: space-between;align-items: center; width: 13rem;">
+                <span class="title">Contact us:</span>
+                <a href="" class="title"><i class="fa fa-telegram" aria-hidden="true"></i></a>
+                <a href="" class="title"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            </div>
+            <div class="categories">
+                <span href="">Address:</span>
+                <a href="https://goo.gl/maps/1MHRt9vzPULSJCUz5">1/1 Abylai Khan St. Kaskelen</a>
+            </div>
+            <div class="prof">
+                <span>® All rights are reserved</span>
+            </div>
         </div>
         <script src="index.js"></script>
     <?php endif; ?>
