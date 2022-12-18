@@ -68,7 +68,6 @@
 
     <h1 style="display:flex; justify-content:center; font-family: 'Bebas Neue', cursive;"> Don't have an account? <a href="site.php">Register now</a></h1>
 
-    <script src="index.js"></script>
     <?php
     setcookie('user', $user['Name'], time() + 3600, "/");
     setcookie('user1', $user['Email'], time() + 3600, "/");
@@ -76,6 +75,8 @@
     $mysql->close();
     header("Location: /test/site.php");
     ?>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="index.js"></script>
 </body>
 
 
