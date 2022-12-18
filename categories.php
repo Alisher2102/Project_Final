@@ -32,6 +32,7 @@
       <div class="categoryName">Kids</div>
     </div>
   </div>
-<?php 
+  <script src="categories.js"></script>
+  <?php 
     require('footer.php');
- ?>
+  ?>
