@@ -15,24 +15,19 @@ body{
     position: relative;
     text-align: center;
     font-size: 10rem;
+    transition: 0.4s;
     
 }
 .category img{
-    height: 37rem;
+    height: 33rem;
     width: 23rem;
-    /* opacity: 0.8; */
     transition: 0.4s;
     filter: blur(0px);
 }
-.category img:hover{
-    filter: blur(3px);
-    box-shadow: 0px 10px 10px 0 rgba(0,0,0,0.24);
-}
-/* .category:hover {
-    filter: blur(0px);
-} */
+
 .categoryName{
     position: absolute;
     font-size: 5rem;
     top: 30%;
+    transition: 0.4s;
 }
