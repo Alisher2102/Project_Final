@@ -13,27 +13,13 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 
-  <title>Basket</title>
+  <title>Cart</title>
 </head>
 
 <body>
-  <div class="navbar">
-    <img src="logo.jpg" alt="">
-    <div style="display: flex; justify-content: space-between;align-items: center; width: 300px;">
-      <a href="" class="title">SDU shop</a>
-      <input type="text" onkeyup="searcher()" class="searcher" placeholder="Search..." name="" id="">
-    </div>
-    <div class="categories">
-      <a href="">Products</a>
-      <a href="">Categories</a>
-    </div>
-    <div class="prof">
-      <a href=""><i style="font-size:28px" class="fa">&#xf291;</i> Basket</a>
-      <a href=""><i class="fa fa-fw fa-user"></i>Registration</a>
-      <a href=""><i class="fa fa-male"></i> Profile</a>
-    </div>
-    <a href="javascript:void(0)" class="icon" onclick="adapt()"><i class="fa fa-bars"></i></a>
-  </div>
+  <?php
+    require("header.php");
+  ?>
   <div style="display: flex; justify-content: center;">
   <div class="main">
     <div class="cart">
@@ -118,6 +104,32 @@
             </div>
           </div>
         </div>
+        <div class="item">
+          <img id="photo"
+            src="https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/hd3/h02/33307092123678/qazaq-republic-50149-00972-s-nadpisu-bezevaa-s-100646050-1.jpg"
+            alt="">
+          <div class="descr">
+            <p id="name">Beige hoodie</p>
+            <div class="size">
+              <p>Size:</p>
+              <select name="sizes" style="border: none; background:aquamarine;">
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+                <option value="XXL">XXL</option>
+              </select>
+            </div>
+            <p class="price">20000₸</p>
+          </div>
+          <div style="text-align: right;align-self: self-start;">
+            <button class="close" ><span class="material-symbols-outlined">cancel</span></button>
+            <div class="quan">
+              <p style="font-size:20px">Quantity:</p>
+              <input type="number" class="quantity" value="1" min="1" max="99">
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <div class="total">
@@ -128,7 +140,7 @@
       </div>
       <div class="delivery">
         <p style="margin:5"><b>Delivery</b></p>
-        <p style="font-size:1.2rem; margin: 5; "><i>Standard delivery(5000₸)</i></p>
+        <p id="deliv"style="font-size:1.2rem; margin: 5; "><i>Standard delivery(5000₸)</i></p>
       </div>
       <div class="paid">
         <p>To be paid:</p>
