@@ -15,6 +15,7 @@
 
 <body>
     <?php
+
     if ($_POST["Login"] == '' || $_POST["password"] == '') {
         header("Location: login.php");
         exit();
@@ -30,7 +31,7 @@
     <div class="navbar">
         <img src="logo-removebg-preview.png" alt="">
         <div style="display: flex; justify-content: space-between;align-items: center; width: 350px;">
-            <a href="index.php" class="title">SDU shop</a>
+            <a href="site.php" class="title">SDU shop</a>
             <input type="text" onkeyup="searcher()" class="searcher" placeholder="Search..." name="" id="">
         </div>
         <div class="categories">
@@ -44,6 +45,7 @@
         </div>
         <a href="javascript:void(0)" class="icon" onclick="adapt()"><i class="fa fa-bars"></i></a>
     </div>
+
     <h1 style="display:flex; justify-content:center; padding-top:5rem;font-family: 'Bebas Neue', cursive;">Log in</h1>
 
     <div class="reg">
@@ -64,7 +66,7 @@
         ?>
     </div>
 
-    <h1 style="display:flex; justify-content:center; font-family: 'Bebas Neue', cursive;"> Don't have an account? <a href="index.php">Register now</a></h1>
+    <h1 style="display:flex; justify-content:center; font-family: 'Bebas Neue', cursive;"> Don't have an account? <a href="site.php">Register now</a></h1>
 
     <script src="index.js"></script>
     <?php
@@ -72,7 +74,7 @@
     setcookie('user1', $user['Email'], time() + 3600, "/");
     setcookie('user0', $user['Login'], time() + 3600, "/");
     $mysql->close();
-    header("Location: /test/index.php");
+    header("Location: /test/site.php");
     ?>
 </body>
 
