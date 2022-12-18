@@ -146,7 +146,7 @@
             <a href="javascript:void(0)" class="icon" onclick="adapt()"><i class="fa fa-bars"></i></a>
         </div>
     </div>
-    
+    <section>test</section>
     <script>
 function adapt(){
     var a=document.querySelector(".navbar");
