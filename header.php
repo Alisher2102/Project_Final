@@ -148,15 +148,7 @@
     </div>
     <section>test</section>
     <script>
-function adapt(){
-    var a=document.querySelector(".navbar");
-    if(a.className==="navbar"){
-        a.className+=" responsive";
-    }
-    else{
-        a.className="navbar";
-    }
-}
+
 //finder function
 function searcher(){
     var input;
