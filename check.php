@@ -16,14 +16,13 @@
     <?php
 
     if ($_POST["Login"] == "" || $_POST["password"] == "" || $_POST["Name"] == '' || $_POST["Email"] == '') {
-        header("Location: index.php");
+        header("Location: site.php");
         exit();
     }
     $login = filter_var(trim($_POST['Login']), FILTER_SANITIZE_SPECIAL_CHARS);
     $name = filter_var(trim($_POST['Name']), FILTER_SANITIZE_SPECIAL_CHARS);
     $pass = filter_var(trim($_POST['password']), FILTER_SANITIZE_SPECIAL_CHARS);
     $email = filter_var(trim($_POST['Email']), FILTER_SANITIZE_EMAIL);
-
     ?>
     <link rel="stylesheet" href="styles.css">
 
@@ -82,7 +81,7 @@
     $mysql = new mysqli('localhost', 'root', 'Sloshed82003!', 'registerbd');
     $mysql->query("INSERT INTO users (Name, Email, Login, Password) VALUES('$name','$email','$login','$pass')");
     $subject = "Test email to send from XAMPP";
-    $body = "Hello! Thank you for registrating at our site. We hope you will enjoy it";
+    $body = "Hello $name! Thank you for registrating at our site. We hope you will enjoy it";
     $headers = "From: recker2014brr@gmail.com";
     if (mail($email, $subject, $body, $headers)) {
         echo "Email successfully sent to $email...";
