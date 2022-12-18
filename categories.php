@@ -32,5 +32,6 @@
       <div class="categoryName">Kids</div>
     </div>
   </div>
-</body>
-</html>
+<?php 
+    require('footer.php');
+ ?>
