@@ -32,11 +32,16 @@ function updateTotal(){
         total += price * quantity;
     }
     document.getElementsByClassName('subTotal1')[0].innerText = total + '₸';
-    if(items.length!=0)
+    if(items.length==0)
+        document.getElementsByClassName('finalorder')[0].innerText = 0 + '₸'
+    else if(items.length>2){
+        document.getElementsByClassName('finalorder')[0].innerText = total+ '₸';
+        document.getElementById('deliv').innerText = "Free delivery(0₸)";
+    }
+    else {
         document.getElementsByClassName('finalorder')[0].innerText = total + 5000 + '₸';
-    else document.getElementsByClassName('finalorder')[0].innerText = 0 + '₸'
+        document.getElementById('deliv').innerText = "Standard delivery(5000₸)";
+    }
 }
-
-
 
 
