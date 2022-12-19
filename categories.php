@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <title>Categories</title>
 </head>
 <body>
@@ -20,19 +21,25 @@
   <h1 style="text-align:center">All Categories</h1>  
   <div  class="main">
     <div class="category">
-      <img src="https://content-us-5.content-cms.com/af9094ac-4ec2-4ea9-8480-e7ef2c8369de/dxresources/26d5/26d5f954-5958-4a4d-94ab-8da4c1c089d7.jpg?resize=258px%3A344px&crop=258%3A344%3B0%2C0" alt="">
-      <div class="categoryName">Men</div>
+      <img src="https://img-lcwaikiki.mncdn.com/mnresize/1024/-/pim/productimages/20222/5960741/l_20222-w2ah14z8-s4m_a1.jpg" alt="">
+      <div class="categoryName">Outwear</div>
     </div>
     <div class="category">
-      <img src="https://www.sussan.com.au/media/catalog/product/0/3/035721_811_01.jpg?optimize=low&bg-color=255,255,255&fit=bounds&height=572&width=480&canvas=480:572" alt="">
-      <div class="categoryName">Women</div>
+      <img src="https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F54%2F09%2F5409f6879c9ed3115e8ee5d7bb34c729f7bc34fb.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bmen_accessories_hatscaps_beanie%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]" alt="">
+      <div class="categoryName">Headwear</div>
     </div>
     <div class="category">
-      <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/853d909a-2075-4ada-b132-c403a0213460/paris-saint-germain-2022-23-away-younger-football-kit-zxjlGR.png" alt="">
-      <div class="categoryName">Kids</div>
+      <img src="https://cdn.shopify.com/s/files/1/0752/6435/products/IMG_0055_aacdad05-1d72-4a19-9874-84caad561d72.jpg?v=1655888040" alt="">
+      <div class="categoryName">T-shirts</div>
+    </div>
+    <div class="category">
+      <img src="https://cdn.shopify.com/s/files/1/1231/6442/products/M-PANTS-16181-20250-BEIGE_6.jpg?v=1663670925&width=1280" alt="">
+      <div class="categoryName">Pants</div>
     </div>
   </div>
   <script src="categories.js"></script>
-  <?php 
+</body>
+</html>
+  <!-- <?php 
     require('footer.php');
-  ?>
+  ?> -->
