@@ -13,10 +13,7 @@ body{
     align-items: center;
     background: rgba(0, 0, 0, 0.824);
     position: relative;
-    text-align: center;
-    font-size: 10rem;
     transition: 0.4s;
-    
 }
 .category img{
     height: 33rem;
@@ -30,4 +27,18 @@ body{
     font-size: 5rem;
     top: 30%;
     transition: 0.4s;
+}
+@media screen and (max-width: 1200px){
+    .category img{
+        height: 20rem;
+        width: 15rem;
+        transition: 0.4s;
+        filter: blur(0px);
+    }
+    .categoryName{
+        position: absolute;
+        font-size: 3rem;
+        top: 30%;
+        transition: 0.4s;
+    }
 }
