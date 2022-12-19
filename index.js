@@ -1,14 +1,12 @@
-
+//dynamic navbar
 $(document).ready(function() {
     var previousScroll = 0;
 
     $(window).scroll(function(){
        var currentScroll = $(this).scrollTop();
        if (currentScroll > previousScroll) {
-    	   //Direction: Down
     	   $(".navbar").slideUp();
        } else {
-    	   //Direction: Up
     	   $(".navbar").slideDown();
        }
        
@@ -30,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     }
 }, false);
 
-
+//slideshow
 var slideIndex=0;
 showSlides();
 function showSlides(){
