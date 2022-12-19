@@ -22,7 +22,7 @@
         <link rel="stylesheet" href="styles.css">
         <div class="navbar">
             <img src="logo-removebg-preview.png" alt="">
-            <div style="display: flex; justify-content: space-between;align-items: center; width: 300px;">
+            <div style="display: flex; justify-content: space-between;align-items: center; width: 350px;">
                 <a href="" class="title">SDU shop</a>
                 <input type="text" onkeyup="searcher()" class="searcher" placeholder="Search..." name="" id="">
             </div>
@@ -54,7 +54,7 @@
             </div>
             <div class="categories">
                 <a href="">Products</a>
-                <a href="">Categories</a>
+                <a href="categories.php">Categories</a>
             </div>
             <div class="prof">
                 <a href="cart.php"><i style="font-size:28px" class="fa">&#xf291;</i> Basket</a>
@@ -78,8 +78,31 @@
                     <label for="">Email:</label>
                     <?= $_COOKIE['user1'] ?>
                 </div>
+
                 <a href="site.php" style="margin-left: 10rem;">Homepage</a>
 
+            </div>
+        </div>
+        <div class="centralise">
+            <div class="profile1">
+                <h1>Products:</h1>
+                <?php
+                $connect = mysqLi_connect('localhost', 'root', 'Sloshed82003!', 'registerbd');
+                $id = $_COOKIE['ID'];
+                $query = "SELECT name,image,price FROM items,carts where $id=carts.id and carts.item_id = items.id";
+                $result = mysqli_query($connect, $query);
+                while ($row = $result->fetch_assoc()) {
+                    echo ("
+          <div class=\"item\">
+              <img class=\"picture\"
+              src=\"$row[image]\">
+              <div class=\"descr\">
+                  <p id=\"name\">$row[name]</p>
+              </div>
+
+          </div>");
+                }
+                ?>
             </div>
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
