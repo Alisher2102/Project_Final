@@ -13,7 +13,7 @@ for (var i=0; i<removeButtons.length; i++){
     var button = removeButtons[i]
     button.addEventListener('click', function(event){
         var clickedButton = event.target;
-        clickedButton.parentElement.parentElement.parentElement.remove();
+        clickedButton.parentElement.parentElement.remove();
         if(items.length==0){
             document.querySelector('.items').innerHTML = "<h1>Cart is empty</h1>";
             src.appendChild(img);
