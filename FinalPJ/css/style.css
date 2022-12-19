@@ -5,40 +5,26 @@
 
 body{
     display: flex;
+    flex-direction: column;
     justify-content: center;
 }
 
-.menu{
-    width: 20%;
-}
-
-header{
+.sticky{
     position: sticky;
+    top: 0;
 }
 
-.header-mobile{
+section{
     display: flex;
-    position: sticky;
-    align-items: center;
-    width: 100%;
-    height: 46px;
-    background: linear-gradient(cyan,white);
+    justify-content: center;
 }
 
 .container{
     display: flex;
     justify-content: center;
+    border: 1px #999 solid;
     width: 80%;
-    background-color: bisque;
-}
-
-.logo{
-    width: 100%;
-    font-size: 24px;
-    text-align: center;
-    content: '';
-    font-family: 'Unbounded', cursive;
-    color: cadetblue;
+    background-color: rgb(255, 255, 255);
 }
 
 .basket{
@@ -73,28 +59,41 @@ header{
 }
 
 .cont_wrap{
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(180px ,1fr));
     width: 80%;
-    background-color: aliceblue;
+    gap: 10px;
 }
 
-.card{
-    width: 25%;
-    padding: 5px;
+.card{ 
+    margin:5px;
 }
 
-.pr_img {
-    overflow: hidden;
+.pr__img {
+    display: flex;
+    justify-content: center; 
+    margin: auto;
+    overflow-x: hidden;
+    width: 168px;
+    height: 168px;
 }
 
 .product{
     width: 100%;
     align-items: center;
-    background-color: rgb(145, 239, 234);
+    background-color: rgb(255, 255, 255);
     border: darkgrey 1px solid;
     border-radius: 6px;
     padding: 5px;
+}
+
+.option{
+    font-size: 32px;
+}
+
+.cat_words{
+    padding: 2px;
+    
 }
 
 .price{
@@ -102,8 +101,8 @@ header{
     justify-content: space-between;
 }
 
-.old{
-    text-decoration: line-through;
+.profile{
+    width: 20%;
 }
 
 @media only screen and (min-width: 960px){
