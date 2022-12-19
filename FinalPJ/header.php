@@ -67,12 +67,20 @@
 
 .right{
     display: flex;
-    width: 50%;
+    width: 58%;
     justify-content: space-between;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: #678983;
 }
 
 .navbar{
     position: sticky;
+    letter-spacing: 1px;
     top: 0;
     z-index: 10;
     justify-content: space-between;
@@ -80,10 +88,11 @@
     display: flex;
     padding-top: 10px;
     padding-bottom: 10px;
+    margin: 0 auto;
     overflow: hidden;
     background-color: #678983;
     font-family: 'Bebas Neue', cursive;
-    width: 100%;
+    width: 90%;
 }
 
 .navbar .nav_el img{
@@ -128,28 +137,30 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital@1&family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="navbar"> 
-        <div class="nav_el left">
-            <a href="Project_Final-main/Project_Final-main/index.php">
-                <img src="assets/img/logo-white.png"  style="color: white; " alt="">
-            </a>
-            <div style="display: flex; justify-content: space-between; align-items: center; width: 300px;">
-                <input type="text" onkeyup="searcher()" class="searcher" placeholder="Search..." name="" id="" >
+    <header>
+        <div class="navbar"> 
+            <div class="nav_el left">
+                <a href="Project_Final-main/Project_Final-main/index.php">
+                    <img src="assets/img/logo-white.png"  style="color: white; " alt="">
+                </a>
+                <div style="display: flex; justify-content: space-between; align-items: center; width: 300px;">
+                    <input type="text" onkeyup="searcher()" class="searcher" placeholder="Search..." name="" id="" >
+                </div>
+            </div>
+            <div class="nav_el right">
+                <div class="categories">
+                    <a href="">Products</a>
+                    <a href="">Categories</a>
+                </div>
+                <div class="prof">
+                    <a href=""><i style="font-size:28px" class="fa">&#xf291;</i> Basket</a>
+                    <a href=""><i class="fa fa-fw fa-user"></i>Registration</a>
+                    <a href=""><i class="fa fa-male"></i> Profile</a>
+                </div>
+                <a href="javascript:void(0)" class="icon" onclick="adapt()"><i class="fa fa-bars"></i></a>
             </div>
         </div>
-        <div class="nav_el right">
-            <div class="categories">
-                <a href="">Products</a>
-                <a href="">Categories</a>
-            </div>
-            <div class="prof">
-                <a href=""><i style="font-size:28px" class="fa">&#xf291;</i> Basket</a>
-                <a href=""><i class="fa fa-fw fa-user"></i>Registration</a>
-                <a href=""><i class="fa fa-male"></i> Profile</a>
-            </div>
-            <a href="javascript:void(0)" class="icon" onclick="adapt()"><i class="fa fa-bars"></i></a>
-        </div>
-    </div>
+    </header>
     <script>
 function adapt(){
     var a=document.querySelector(".navbar");
