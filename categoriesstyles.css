@@ -16,15 +16,15 @@ body{
     transition: 0.4s;
 }
 .category img{
-    height: 33rem;
-    width: 23rem;
+    height: 28rem;
+    width: 18rem;
     transition: 0.4s;
     filter: blur(0px);
 }
 
 .categoryName{
     position: absolute;
-    font-size: 5rem;
+    font-size: 3rem;
     top: 30%;
     transition: 0.4s;
 }
@@ -37,7 +37,7 @@ body{
     }
     .categoryName{
         position: absolute;
-        font-size: 3rem;
+        font-size: 2rem;
         top: 30%;
         transition: 0.4s;
     }
