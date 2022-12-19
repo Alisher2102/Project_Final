@@ -5,6 +5,10 @@ var src = document.querySelector('.items');
 var removeButtons = document.getElementsByClassName('close');
 var quantities = document.getElementsByClassName('quantity');
 updateTotal();
+if(items.length==0){
+    document.querySelector('.items').innerHTML = "<h1>Cart is empty</h1>";
+    src.appendChild(img);
+}
 for (var i=0; i<removeButtons.length; i++){
     var button = removeButtons[i]
     button.addEventListener('click', function(event){
