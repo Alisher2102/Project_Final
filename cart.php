@@ -1,5 +1,4 @@
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,117 +25,47 @@
       <h1 id="cart" style="margin: 0px; padding: 20px; border-bottom: solid;border-width: 2px;border-color: rgb(210, 205, 205);">
         My cart</h1>
       <div class="items">
-        <div class="item">
-          <img id="photo"
-            src="https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/hd3/h02/33307092123678/qazaq-republic-50149-00972-s-nadpisu-bezevaa-s-100646050-1.jpg"
-            alt="">
-          <div class="descr">
-            <p id="name">Beige hoodie</p>
-            <div class="size">
-              <p>Size:</p>
-              <select name="sizes" style="border: none; background:aquamarine;">
-                <option value="S">S</option>
-                <option value="M">M</option>
-                <option value="L">L</option>
-                <option value="XL">XL</option>
-                <option value="XXL">XXL</option>
-              </select>
-            </div>
-            <p class="price">20000₸</p>
+        <?php
+        $connect = mysqLi_connect('localhost', 'root', 'temirlan9087', 'items');
+        $query = "SELECT name,image,price FROM items";
+        $result = mysqli_query($connect, $query);
+        while($row = $result->fetch_assoc()){
+          echo("
+          <div class=\"item\">
+              <img id=\"photo\"
+              src=\"$row[image]\">
+              <div class=\"descr\">
+                  <p id=\"name\">$row[name]</p>
+                  <div class=\"size\">
+                  <p>Size:</p>
+                  <select name=\"sizes\" style=\"border: none; background:aquamarine;\">
+                      <option value=\"S\">S</option>
+                      <option value=\"M\">M</option>
+                      <option value=\"L\">L</option>
+                      <option value=\"XL\">XL</option>
+                      <option value=\"XXL\">XXL</option>
+                  </select>
+                  </div>
+                  <p class=\"price\">$row[price]₸</p>
+              </div>
+              <div style=\"text-align: right;align-self: self-start;\">
+                  <button class=\"close\" ><span class=\"material-symbols-outlined\">cancel</span></button>
+                  <div class=\"quan\">
+                  <p style=\"font-size:20px\">Quantity:</p>
+                  <input type=\"number\" class=\"quantity\" value=\"1\" min=\"1\" max=\"99\">
+                  </div>
+              </div>
           </div>
-          <div style="text-align: right;align-self: self-start;">
-            <button class="close" ><span class="material-symbols-outlined">cancel</span></button>
-            <div class="quan">
-              <p style="font-size:20px">Quantity:</p>
-              <input type="number" class="quantity" value="1" min="1" max="99">
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img
-            src="https://simg.marwin.kz/media/catalog/product/cache/41deb699a7fea062a8915debbbb0442c/q/a/qazaq_republic_3.jpeg"
-            alt="">
-          <div class="descr">
-            <p id="name">Burgundy sweatshirt</p>
-            <div class="size">
-              <p>Size:</p>
-              <select name="sizes" style="border: none; background:aquamarine;">
-                <option value="S">S</option>
-                <option value="M">M</option>
-                <option value="L">L</option>
-                <option value="XL">XL</option>
-                <option value="XXL">XXL</option>
-              </select>
-            </div>
-            <p class="price">15000₸</p>
-          </div>
-          <div style="text-align: right;align-self: self-start;">
-            <button class="close" ><span class="material-symbols-outlined">cancel</span></button>
-            <div class="quan">
-              <p style="font-size:20px">Quantity:</p>
-              <input type="number" class="quantity" value="1" min="1" max="99">
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img
-            src="https://simg.marwin.kz/media/catalog/product/cache/41deb699a7fea062a8915debbbb0442c/q/a/qazaq_republic_3.jpeg"
-            alt="">
-          <div class="descr">
-            <p id="name">Burgundy sweatshirt</p>
-            <div class="size">
-              <p>Size:</p>
-              <select name="sizes" style="border: none; background:aquamarine;">
-                <option value="S">S</option>
-                <option value="M">M</option>
-                <option value="L">L</option>
-                <option value="XL">XL</option>
-                <option value="XXL">XXL</option>
-              </select>
-            </div>
-            <p class="price">15000₸</p>
-          </div>
-          <div style="text-align: right;align-self: self-start;">
-            <button class="close" ><span class="material-symbols-outlined">cancel</span></button>
-            <div class="quan">
-              <p style="font-size:20px">Quantity:</p>
-              <input type="number" class="quantity" value="1" min="1" max="99">
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img id="photo"
-            src="https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/hd3/h02/33307092123678/qazaq-republic-50149-00972-s-nadpisu-bezevaa-s-100646050-1.jpg"
-            alt="">
-          <div class="descr">
-            <p id="name">Beige hoodie</p>
-            <div class="size">
-              <p>Size:</p>
-              <select name="sizes" style="border: none; background:aquamarine;">
-                <option value="S">S</option>
-                <option value="M">M</option>
-                <option value="L">L</option>
-                <option value="XL">XL</option>
-                <option value="XXL">XXL</option>
-              </select>
-            </div>
-            <p class="price">20000₸</p>
-          </div>
-          <div style="text-align: right;align-self: self-start;">
-            <button class="close" ><span class="material-symbols-outlined">cancel</span></button>
-            <div class="quan">
-              <p style="font-size:20px">Quantity:</p>
-              <input type="number" class="quantity" value="1" min="1" max="99">
-            </div>
-          </div>
-        </div>
+          ");
+        }
+        ?>
       </div>
     </div>
     <div class="total">
       <h1 style="margin: 0px; padding: 20px; border-bottom: solid;border-width: 2px;border-color: rgb(210, 205, 205);">Total</h1>
       <div class="subTotal">
         <p style=" margin: 5;"><b>Sub-total</b></p>
-        <p class="subtotal1"><i>35000₸</i></p>
+        <p class="subtotal1"><i></i></p>
       </div>
       <div class="delivery">
         <p style="margin:5"><b>Delivery</b></p>
@@ -144,7 +73,7 @@
       </div>
       <div class="paid">
         <p>To be paid:</p>
-        <p class="finalorder">40000₸</p>
+        <p class="finalorder"></p>
       </div>
       <button class="order" ><a href="soon.html" style="color: white; text-decoration: none;">Place an order</a></button>
       <div class="accept">
