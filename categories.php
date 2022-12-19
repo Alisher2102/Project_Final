@@ -1,4 +1,6 @@
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<link rel="stylesheet" href="categoriesstyles.css">
   <?php
     require("header.php");
   ?>
@@ -22,7 +24,8 @@
     </div>
   </div>
   <script src="categories.js"></script>
-
- <?php 
+</body>
+</html>
+  <!-- <?php 
     require('footer.php');
-  ?> 
+  ?> -->
