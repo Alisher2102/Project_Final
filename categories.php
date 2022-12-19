@@ -24,8 +24,6 @@
     </div>
   </div>
   <script src="categories.js"></script>
-</body>
-</html>
-  <!-- <?php 
+ <?php 
     require('footer.php');
-  ?> -->
+  ?> 
