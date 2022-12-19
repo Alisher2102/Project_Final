@@ -1,180 +1,195 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SDU shop</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
-@media only screen and (max-width: 960px){
-    .navbar{
-        display: none;
-    }
-}
-
-.title{
-    display: inline-block;
-}
-.categories{
-    display: inline-block;
-}
-.categories a{
-    margin-right: 10px;
-    display: inline-block;
-}
-.searcher{
-    margin-bottom: 5px;
-    padding: .9em 2.5em;
-    font-weight: bold;
-    font-size: 1rem;
-    font-family: 'Bebas Neue', cursive;
-    width: 350px;
-    border-style: solid;
-    border-radius: 10px;
-    border-width: thin;
-    border-color: #263159;
-}
-.searcher[type=text]{
-    width: 130px;
-    height: 20px;
-    -webkit-transition: width 0.4s ease-in-out;
-    transition: width 0.4s ease-in-out;
-}
-.searcher[type=text]:focus{
-    width: 200px;
-}
-
-.prof{
-    display: inline-block;
-    
-}
-.prof a{
-    margin-right: 10px;
-    display: inline-block;
-}
-
-.nav_el{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.left{
-    display: flex;
-    width: 40%;
-    justify-content: space-around;
-}
-
-.right{
-    display: flex;
-    width: 50%;
-    justify-content: space-between;
-}
-
-.navbar{
-    position: sticky;
-    top: 0;
-    z-index: 10;
-    justify-content: space-between;
-    align-items: center;
-    display: flex;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    overflow: hidden;
-    background-color: #678983;
-    font-family: 'Bebas Neue', cursive;
-    width: 100%;
-}
-
-.navbar .nav_el img{
-    width: 150px;
-    bottom: -30px;
-    left: 0px;
-    margin-top: 3px;
-}
-.navbar .nav_el a{
-    color: white;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    margin-top: 0;
-    margin-bottom: 0;
-    font-size: 34px;
-    transition-duration:1s;
-    transition-property: color, transform;
-}
-.navbar .nav_el a:visited{
-    text-decoration: none;
-}
-.navbar .nav_el a:link{
-    text-decoration: none;
-}
-.navbar .nav_el a:active{
-    text-decoration: none;
-}
-.navbar .nav_el a:hover{
-    /* animation-name: rainbow; */
-    /* animation-duration: 2s; */
-    /* animation-iteration-count: 3; */
-    color: #393E46;
-    transform: translateY(-5px);
-}
-.navbar .nav_el .icon{
-    display: none;
-}
-    </style>
+    <link rel="stylesheet" href="../FinalPJ/css/style.css">
+    <script src="https://kit.fontawesome.com/aa8c4c51ae.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&family=Roboto&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital@1&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded&display=swap" rel="stylesheet">
+    <script src="js/script.js"></script>
+    <title>SDU Shop</title>
 </head>
 <body>
-    <div class="navbar"> 
-        <div class="nav_el left">
-            <a href="Project_Final-main/Project_Final-main/index.php">
-                <img src="assets/img/logo-white.png"  style="color: white; " alt="">
-            </a>
-            <div style="display: flex; justify-content: space-between; align-items: center; width: 300px;">
-                <input type="text" onkeyup="searcher()" class="searcher" placeholder="Search..." name="" id="" >
-            </div>
+    <header class="sticky">
+        <?php
+            require("header.php")
+        ?>
+    </header>
+    <!-- <header class="header-mobile">
+        <div class="menu-hide-btn">
+            <div class="poloska"></div>
+            <div class="poloska"></div>
+            <div class="poloska"></div>
         </div>
-        <div class="nav_el right">
-            <div class="categories">
-                <a href="">Products</a>
-                <a href="">Categories</a>
+        <span class="title">SDU SHOP</span>
+        <a href="" class="basket"><i class="fa-light fa-basket-shopping"></i></a>
+    </header> -->
+    <section>
+        <div class="container">
+            <?php include_once('path.php');?>
+            <div class="cont_wrap">
+                <div class="card">
+                    <div class="product">
+                        <?php $class = new Product(1)?>
+                        <div class="pr__img">
+                            <img src = <?php echo $class->getPathImg()?>>
+                        </div>
+                        <div class="text">
+                            <p class="option"><?php echo $class->getDesc()?></p>
+                            <div class="cat_words"><?php echo $class->getCat()?></div>
+                            <div class="price">
+                                <span class="old"><?php echo $class->getPrice()?>&#8376;</span>
+                                <span class="new"><?php echo ($class->getPrice()*0.8)?>&#8376;</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="product">
+                        <?php $class = new Product(2)?>
+                        <div class="pr__img">
+                            <img src = <?php echo $class->getPathImg()?>>
+                        </div>
+                        <div class="text">
+                            <p class="option"><?php echo $class->getDesc()?></p>
+                            <div class="cat_words"><?php echo $class->getCat()?></div>
+                            <div class="price">
+                                <span class="old"><?php echo $class->getPrice()?>&#8376;</span>
+                                <span class="new"><?php echo ($class->getPrice()*0.8)?>&#8376;</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="product">
+                        <?php $class = new Product(3)?>
+                        <div class="pr__img">
+                            <img src = <?php echo $class->getPathImg()?>>
+                        </div>
+                        <div class="text">
+                            <p class="option"><?php echo $class->getDesc()?></p>
+                            <div class="cat_words"><?php echo $class->getCat()?></div>
+                            <div class="price">
+                                <span class="old"><?php echo $class->getPrice()?>&#8376;</span>
+                                <span class="new"><?php echo ($class->getPrice()*0.8)?>&#8376;</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="product">
+                        <?php $class = new Product(4)?>
+                        <div class="pr__img">
+                            <img src = <?php echo $class->getPathImg()?>>
+                        </div>
+                        <div class="text">
+                            <p class="option"><?php echo $class->getDesc()?></p>
+                            <div class="cat_words"><?php echo $class->getCat()?></div>
+                            <div class="price">
+                                <span class="old"><?php echo $class->getPrice()?>&#8376;</span>
+                                <span class="new"><?php echo ($class->getPrice()*0.8)?>&#8376;</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="product">
+                        <?php $class = new Product(5)?>
+                        <div class="pr__img">
+                            <img src = <?php echo $class->getPathImg()?>>
+                        </div>
+                        <div class="text">
+                            <p class="option"><?php echo $class->getDesc()?></p>
+                            <div class="cat_words"><?php echo $class->getCat()?></div>
+                            <div class="price">
+                                <span class="old"><?php echo $class->getPrice()?>&#8376;</span>
+                                <span class="new"><?php echo ($class->getPrice()*0.8)?>&#8376;</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="product">
+                        <?php $class = new Product(6)?>
+                        <div class="pr__img">
+                            <img src = <?php echo $class->getPathImg()?>>
+                        </div>
+                        <div class="text">
+                            <p class="option"><?php echo $class->getDesc()?></p>
+                            <div class="cat_words"><?php echo $class->getCat()?></div>
+                            <div class="price">
+                                <span class="old"><?php echo $class->getPrice()?>&#8376;</span>
+                                <span class="new"><?php echo ($class->getPrice()*0.8)?>&#8376;</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="product">
+                        <?php $class = new Product(7)?>
+                        <div class="pr__img">
+                            <img src = <?php echo $class->getPathImg()?>>
+                        </div>
+                        <div class="text">
+                            <p class="option"><?php echo $class->getDesc()?></p>
+                            <div class="cat_words"><?php echo $class->getCat()?></div>
+                            <div class="price">
+                                <span class="old"><?php echo $class->getPrice()?>&#8376;</span>
+                                <span class="new"><?php echo ($class->getPrice()*0.8)?>&#8376;</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="product">
+                        <?php $class = new Product(8)?>
+                        <div class="pr__img">
+                            <img src = <?php echo $class->getPathImg()?>>
+                        </div>
+                        <div class="text">
+                            <p class="option"><?php echo $class->getDesc()?></p>
+                            <div class="cat_words"><?php echo $class->getCat()?></div>
+                            <div class="price">
+                                <span class="old"><?php echo $class->getPrice()?>&#8376;</span>
+                                <span class="new"><?php echo ($class->getPrice()*0.8)?>&#8376;</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-            <div class="prof">
-                <a href=""><i style="font-size:28px" class="fa">&#xf291;</i> Basket</a>
-                <a href=""><i class="fa fa-fw fa-user"></i>Registration</a>
-                <a href=""><i class="fa fa-male"></i> Profile</a>
+        
+    <?php
+    error_reporting(0);
+
+    if ($_COOKIE['user'] == '') :
+
+    ?>
+            <div class="profile">
+                <label for="">Name:</label>
+                <h1>You have not entered to account</h1>
+                <br>
+                <label for="">Email:</label>
+                <h1>You have not entered to account</h1>
+                <a href="index.php">homepage</a>
             </div>
-            <a href="javascript:void(0)" class="icon" onclick="adapt()"><i class="fa fa-bars"></i></a>
+    <?php else : ?>
+            <div class="profile">
+                <label for="">Name:</label>
+                <?= $_COOKIE['user'] ?>
+                <br>
+                <label for="">Email:</label>
+                <?= $_COOKIE['user1'] ?>
+                <a href="index.php">homepage</a>
+            </div>
+    <?php endif; ?>
         </div>
-    </div>
-    <script>
-function adapt(){
-    var a=document.querySelector(".navbar");
-    if(a.className==="navbar"){
-        a.className+=" responsive";
-    }
-    else{
-        a.className="navbar";
-    }
-}
-//finder function
-function searcher(){
-    var input;
-    input=document.querySelector(".searcher");
-    input=input.value.toUpperCase();
-    var lists=document.querySelectorAll(".navbar a");
-    for(var i=0;i<lists.length;i++){
-        if(lists[i].text.toUpperCase().indexOf(input)>-1){
-            lists[i].style.visibility="visible";
-        }
-        else{
-            lists[i].style.visibility="hidden";
-        }
-    }
-}
-    </script>
+    </section>
+    <?php
+        require("footer.php")
+    ?>
 </body>
 </html>
