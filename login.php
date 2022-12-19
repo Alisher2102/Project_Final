@@ -19,7 +19,7 @@
     <div class="navbar">
         <img src="logo-removebg-preview.png" alt="">
         <div style="display: flex; justify-content: space-between;align-items: center; width: 350px;">
-            <a href="index.php" class="title">SDU shop</a>
+            <a href="site.php" class="title">SDU shop</a>
             <input type="text" onkeyup="searcher()" class="searcher" placeholder="Search..." name="" id="">
         </div>
         <div class="categories">
@@ -42,8 +42,8 @@
             <button type="submit" name="submit">Log In</button>
         </form>
     </div>
-    <h1 style="display:flex; justify-content:center; font-family: 'Bebas Neue', cursive;"> Don't have an account? <a href="index.php">Register now</a></h1>
-
+    <h1 style="display:flex; justify-content:center; font-family: 'Bebas Neue', cursive;"> Don't have an account? <a href="site.php">Register now</a></h1>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="index.js"></script>
 </body>
 
