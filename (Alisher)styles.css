@@ -168,12 +168,16 @@ body{
     justify-content: space-around;
     align-items: center;
     display: flex;
-    padding-top: 10px;
-    padding-bottom: 10px;
     overflow: hidden;
     background-color: #232F3E;
     font-family: 'Bebas Neue', cursive;
     width: 100%;
+}
+.footer.stikybottom {
+    position: fixed;
+    bottom:0;
+    left: 0;
+    right:0;
 }
 .SPAN{
     color: white;
@@ -256,11 +260,12 @@ body{
 .navbar .icon{
     display: none;
 }
-/* .sticky {
+.navbar.stikybottom {
     position: fixed;
-    top: 0;
-    width: 100%;
-} */
+    top:0;
+    left: 0;
+    right:0;
+}
 
 .sldies{
     display: none;
@@ -420,6 +425,9 @@ body{
 }
 
 @media screen and (max-width: 1200px){
+    .searcher{
+        display: none;
+    }
     .navbar img{
         display: none;
     }
