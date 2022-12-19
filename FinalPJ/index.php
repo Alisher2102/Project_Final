@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../FinalPJ/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/aa8c4c51ae.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,25 +31,207 @@
         <div class="container">
             <?php include_once('path.php');?>
             <div class="cont_wrap">
-                <div class="card">
-                    <div class="product">
+            <div class="card">
+                    <a href="products_page.php" class="product">
                         <?php $class = new Product(1)?>
                         <div class="pr__img">
-                            <img src = <?php echo $class->getPathImg()?>>
+                            <img width="180px" height="200px" src = <?php echo $class->getPathImg()?>>
                         </div>
-                        <div class="text">
+                        <div class="text1">
                             <p class="option"><?php echo $class->getDesc()?></p>
                             <div class="cat_words"><?php echo $class->getCat()?></div>
                             <div class="price">
                                 <span class="old"><?php echo $class->getPrice()?>&#8376;</span>
-                                <span class="new"><?php echo ($class->getPrice()*0.8)?>&#8376;</span>
+                                <span class="new"><?php echo $class->getPrice()?>&#8376;</span>
                             </div>
                         </div>
-                    </div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="products_page.php" class="product">
+                        <?php $class = new Product(1)?>
+                        <div class="pr__img">
+                            <img width="180px" height="200px" src = <?php echo $class->getPathImg()?>>
+                        </div>
+                        <div class="text1">
+                            <p class="option"><?php echo $class->getDesc()?></p>
+                            <div class="cat_words"><?php echo $class->getCat()?></div>
+                            <div class="price">
+                                <span class="old"><?php echo $class->getPrice()?>&#8376;</span>
+                                <span class="new"><?php echo $class->getPrice()?>&#8376;</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="products_page.php" class="product">
+                        <?php $class = new Product(1)?>
+                        <div class="pr__img">
+                            <img width="180px" height="200px" src = <?php echo $class->getPathImg()?>>
+                        </div>
+                        <div class="text1">
+                            <p class="option"><?php echo $class->getDesc()?></p>
+                            <div class="cat_words"><?php echo $class->getCat()?></div>
+                            <div class="price">
+                                <span class="old"><?php echo $class->getPrice()?>&#8376;</span>
+                                <span class="new"><?php echo $class->getPrice()?>&#8376;</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="products_page.php" class="product">
+                        <?php $class = new Product(1)?>
+                        <div class="pr__img">
+                            <img width="180px" height="200px" src = <?php echo $class->getPathImg()?>>
+                        </div>
+                        <div class="text1">
+                            <p class="option"><?php echo $class->getDesc()?></p>
+                            <div class="cat_words"><?php echo $class->getCat()?></div>
+                            <div class="price">
+                                <span class="old"><?php echo $class->getPrice()?>&#8376;</span>
+                                <span class="new"><?php echo $class->getPrice()?>&#8376;</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="products_page.php" class="product">
+                        <?php $class = new Product(1)?>
+                        <div class="pr__img">
+                            <img width="180px" height="200px" src = <?php echo $class->getPathImg()?>>
+                        </div>
+                        <div class="text1">
+                            <p class="option"><?php echo $class->getDesc()?></p>
+                            <div class="cat_words"><?php echo $class->getCat()?></div>
+                            <div class="price">
+                                <span class="old"><?php echo $class->getPrice()?>&#8376;</span>
+                                <span class="new"><?php echo $class->getPrice()?>&#8376;</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="products_page.php" class="product">
+                        <?php $class = new Product(1)?>
+                        <div class="pr__img">
+                            <img width="180px" height="200px" src = <?php echo $class->getPathImg()?>>
+                        </div>
+                        <div class="text11">
+                            <p class="option"><?php echo $class->getDesc()?></p>
+                            <div class="cat_words"><?php echo $class->getCat()?></div>
+                            <div class="price">
+                                <span class="old"><?php echo $class->getPrice()?>&#8376;</span>
+                                <span class="new"><?php echo $class->getPrice()?>&#8376;</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="products_page.php" class="product">
+                        <?php $class = new Product(1)?>
+                        <div class="pr__img">
+                            <img width="180px" height="200px" src = <?php echo $class->getPathImg()?>>
+                        </div>
+                        <div class="text1">
+                            <p class="option"><?php echo $class->getDesc()?></p>
+                            <div class="cat_words"><?php echo $class->getCat()?></div>
+                            <div class="price">
+                                <span class="old"><?php echo $class->getPrice()?>&#8376;</span>
+                                <span class="new"><?php echo $class->getPrice()?>&#8376;</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="products_page.php" class="product">
+                        <?php $class = new Product(1)?>
+                        <div class="pr__img">
+                            <img width="180px" height="200px" src = <?php echo $class->getPathImg()?>>
+                        </div>
+                        <div class="text1">
+                            <p class="option"><?php echo $class->getDesc()?></p>
+                            <div class="cat_words"><?php echo $class->getCat()?></div>
+                            <div class="price">
+                                <span class="old"><?php echo $class->getPrice()?>&#8376;</span>
+                                <span class="new"><?php echo $class->getPrice()?>&#8376;</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="products_page.php" class="product">
+                        <?php $class = new Product(1)?>
+                        <div class="pr__img">
+                            <img width="180px" height="200px" src = <?php echo $class->getPathImg()?>>
+                        </div>
+                        <div class="text1">
+                            <p class="option"><?php echo $class->getDesc()?></p>
+                            <div class="cat_words"><?php echo $class->getCat()?></div>
+                            <div class="price">
+                                <span class="old"><?php echo $class->getPrice()?>&#8376;</span>
+                                <span class="new"><?php echo $class->getPrice()?>&#8376;</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="products_page.php" class="product">
+                        <?php $class = new Product(1)?>
+                        <div class="pr__img">
+                            <img width="180px" height="200px" src = <?php echo $class->getPathImg()?>>
+                        </div>
+                        <div class="text1">
+                            <p class="option"><?php echo $class->getDesc()?></p>
+                            <div class="cat_words"><?php echo $class->getCat()?></div>
+                            <div class="price">
+                                <span class="old"><?php echo $class->getPrice()?>&#8376;</span>
+                                <span class="new"><?php echo $class->getPrice()?>&#8376;</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="products_page.php" class="product">
+                        <?php $class = new Product(1)?>
+                        <div class="pr__img">
+                            <img width="180px" height="200px" src = <?php echo $class->getPathImg()?>>
+                        </div>
+                        <div class="text1">
+                            <p class="option"><?php echo $class->getDesc()?></p>
+                            <div class="cat_words"><?php echo $class->getCat()?></div>
+                            <div class="price">
+                                <span class="old"><?php echo $class->getPrice()?>&#8376;</span>
+                                <span class="new"><?php echo $class->getPrice()?>&#8376;</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="products_page.php" class="product">
+                        <?php $class = new Product(1)?>
+                        <div class="pr__img">
+                            <img width="180px" height="200px" src = <?php echo $class->getPathImg()?>>
+                        </div>
+                        <div class="text11">
+                            <p class="option"><?php echo $class->getDesc()?></p>
+                            <div class="cat_words"><?php echo $class->getCat()?></div>
+                            <div class="price">
+                                <span class="old"><?php echo $class->getPrice()?>&#8376;</span>
+                                <span class="new"><?php echo $class->getPrice()?>&#8376;</span>
+                            </div>
+                        </div>
+                    </a>
                 </div>
             </div>
-        
-    <?php
+            <div class="catalog">
+                <h2>Categories:</h2>
+                <hr><h3>hats</h3>
+                <hr><h3>outerwear</h3>
+                <hr><h3>pants</h3>
+            </div>
+
+    <!-- <?php
     error_reporting(0);
 
     if ($_COOKIE['user'] == '') :
@@ -72,11 +254,14 @@
                 <?= $_COOKIE['user1'] ?>
                 <a href="index.php">homepage</a>
             </div>
-    <?php endif; ?>
+    <?php endif; ?> -->
         </div>
+        
     </section>
+<footer>
     <?php
         require("footer.php")
     ?>
+</footer>
 </body>
 </html>
