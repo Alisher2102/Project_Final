@@ -2,6 +2,7 @@
   <?php
     require("header.php");
   ?>
+<link rel="stylesheet" href="cartstyles.css">
   <div style="display: flex; justify-content: center;">
   <div class="main">
     <div class="cart">
