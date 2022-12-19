@@ -4,7 +4,7 @@ error_reporting(0);
 if ($_COOKIE['user'] == '') :
 ?>
     <section>
-        <link rel="stylesheet" href="styles.css">
+        <!-- <link rel="stylesheet" href="styles.css"> -->
         <h1 style="display:flex; justify-content:center; padding-top:5rem;font-family: 'Bebas Neue', cursive;">Sign up</h1>
         <div class="reg">
             <form action="check.php" method="post" autocomplete="off">
@@ -23,17 +23,17 @@ if ($_COOKIE['user'] == '') :
     </section>
 <?php else : ?>
     <section>
-        <link rel="stylesheet" href="styles.css">
+        <!-- <link rel="stylesheet" href="styles.css"> -->
 
         <div class="carouselImgs">
             <div class="sldies fade">
                 <img src="https://the-steppe.com/pictures/files/Aidana/Aid2/htmlimage(1).jpeg">
             </div>
             <div class="sldies fade">
-                <img src="https://centralasia.news/uploads/posts/2021-04/1619506711_futbolka-kazak-repablik.jpg">
+                <img src="https://avatars.mds.yandex.net/get-altay/4335161/2a00000179a759b5e135f0a43a169c749ce3/XXXL">
             </div>
             <div class="sldies fade">
-                <img src="https://sxodim.com/uploads/posts/2021/11/09/optimized/eaadc58f3286857374fbdf7ea189deea_545x305-q-85.jpg">
+                <img src="https://the-steppe.com/images/news/3126-cDaf4aaA.jpg">
             </div>
         </div>
         <div class="whatarewe">
@@ -60,14 +60,14 @@ if ($_COOKIE['user'] == '') :
                     </div>
                 </div>
                 <div class="slide">
-                    <img src="https://centralasia.news/uploads/posts/2021-04/1619506711_futbolka-kazak-repablik.jpg">
+                    <img src="https://the-steppe.com/pictures/files/Aidana/Aid2/htmlimage-2.jpeg">
                     <div class="pointers">
                         <a class="prev" onclick="plusSlides(-1)">❮</a>
                         <a class="next" onclick="plusSlides(1)">❯</a>
                     </div>
                 </div>
                 <div class="slide">
-                    <img src="https://sxodim.com/uploads/posts/2021/11/09/optimized/eaadc58f3286857374fbdf7ea189deea_545x305-q-85.jpg">
+                    <img src="https://the-steppe.com/pictures/files/Aidana/Aid2/ALA1.jpg">
                     <div class="pointers">
                         <a class="prev" onclick="plusSlides(-1)">❮</a>
                         <a class="next" onclick="plusSlides(1)">❯</a>
@@ -76,7 +76,7 @@ if ($_COOKIE['user'] == '') :
             </div>
 
         </div>
-
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
         <script src="index.js"></script>
     </section>
 <?php endif; ?>
