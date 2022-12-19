@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="cartstyles.css">
+  <link rel="stylesheet" href="cartstyles.css">
   <?php
     require("header.php");
   ?>
@@ -9,8 +9,9 @@
         My cart</h1>
       <div class="items">
         <?php
-        $connect = mysqLi_connect('localhost', 'root', 'temirlan9087', 'items');
-        $query = "SELECT name,image,price FROM items";
+        $connect = mysqLi_connect('localhost', 'root', 'temirlan9087', 'registerbd');
+        $id = $_COOKIE['ID'];
+        $query = "SELECT name,image,price FROM items,carts where $id=carts.id and carts.item_id = items.id";
         $result = mysqli_query($connect, $query);
         while($row = $result->fetch_assoc()){
           echo("
