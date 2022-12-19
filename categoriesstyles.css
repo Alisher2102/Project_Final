@@ -4,8 +4,11 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 .main{
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-areas: "category category category category";
+    grid-gap: 4rem;
+    transition: 0.4s;
+    justify-content: center;
 }
 .category{
     display: flex;
@@ -28,17 +31,22 @@ body{
     top: 30%;
     transition: 0.4s;
 }
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 1300px){
     .category img{
-        height: 20rem;
-        width: 15rem;
+        height: 25rem;
+        width: 16rem;
         transition: 0.4s;
-        filter: blur(0px);
     }
     .categoryName{
-        position: absolute;
-        font-size: 2rem;
-        top: 30%;
+        font-size: 2.5rem;
+        top: 35%;
+    }
+    .main{
+        grid-gap: 6rem;
+        grid-template-areas: 
+        "category category"
+        "category category";
+        justify-items: center;
         transition: 0.4s;
     }
 }
