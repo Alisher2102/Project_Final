@@ -4,7 +4,7 @@
   <?php
     require("header.php");
   ?>
-  <h1 style="text-align:center">All Categories</h1>  
+  <h1 style="text-align:center; font-size:3rem; margin-bottom:40px">All Categories</h1>  
   <div  class="main">
     <div class="category">
       <img src="https://img-lcwaikiki.mncdn.com/mnresize/1024/-/pim/productimages/20222/5960741/l_20222-w2ah14z8-s4m_a1.jpg" alt="">
@@ -24,6 +24,6 @@
     </div>
   </div>
   <script src="categories.js"></script>
- <?php 
+  <?php 
     require('footer.php');
-  ?> 
+  ?>
