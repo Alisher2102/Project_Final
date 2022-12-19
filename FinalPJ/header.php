@@ -7,22 +7,22 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
 @media only screen and (max-width: 960px){
-    .navbar{
+    header .navbar{
         display: none;
     }
 }
 
-.title{
+header .title{
     display: inline-block;
 }
-.categories{
+header .categories{
     display: inline-block;
 }
-.categories a{
+header .categories a{
     margin-right: 10px;
     display: inline-block;
 }
-.searcher{
+header .searcher{
     margin-bottom: 5px;
     padding: .9em 2.5em;
     font-weight: bold;
@@ -34,38 +34,38 @@
     border-width: thin;
     border-color: #263159;
 }
-.searcher[type=text]{
+header .searcher[type=text]{
     width: 130px;
     height: 20px;
     -webkit-transition: width 0.4s ease-in-out;
     transition: width 0.4s ease-in-out;
 }
-.searcher[type=text]:focus{
+header .searcher[type=text]:focus{
     width: 200px;
 }
 
-.prof{
+header .prof{
     display: inline-block;
     
 }
-.prof a{
+header .prof a{
     margin-right: 10px;
     display: inline-block;
 }
 
-.nav_el{
+header .nav_el{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.left{
+header .left{
     display: flex;
     width: 40%;
     justify-content: space-around;
 }
 
-.right{
+header .right{
     display: flex;
     width: 58%;
     justify-content: space-between;
@@ -73,12 +73,13 @@
 
 header{
     position: sticky;
+    z-index: 1000;
     top: 0;
     width: 100%;
     background-color: #678983;
 }
 
-.navbar{
+header .navbar{
     position: sticky;
     letter-spacing: 1px;
     top: 0;
@@ -95,13 +96,13 @@ header{
     width: 90%;
 }
 
-.navbar .nav_el img{
+header .navbar .nav_el img{
     width: 150px;
     bottom: -30px;
     left: 0px;
     margin-top: 3px;
 }
-.navbar .nav_el a{
+header .navbar .nav_el a{
     color: white;
     padding-top: 0px;
     padding-bottom: 0px;
@@ -111,23 +112,23 @@ header{
     transition-duration:1s;
     transition-property: color, transform;
 }
-.navbar .nav_el a:visited{
+header .navbar .nav_el a:visited{
     text-decoration: none;
 }
-.navbar .nav_el a:link{
+header .navbar .nav_el a:link{
     text-decoration: none;
 }
-.navbar .nav_el a:active{
+header .navbar .nav_el a:active{
     text-decoration: none;
 }
-.navbar .nav_el a:hover{
+header .navbar .nav_el a:hover{
     /* animation-name: rainbow; */
     /* animation-duration: 2s; */
     /* animation-iteration-count: 3; */
     color: #393E46;
     transform: translateY(-5px);
 }
-.navbar .nav_el .icon{
+header .navbar .nav_el .icon{
     display: none;
 }
     </style>
