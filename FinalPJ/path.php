@@ -65,26 +65,29 @@ class Product{
         "головные уборы",
         "Верхняя одежда"
     );
+
+    public $prices = array(
+        973, 1784, 1574, 2226, 1417, 1207, 2954, 2557, 2839, 2451,
+        1747, 2033, 2200, 1371, 1729, 1839, 2148, 1092, 2312, 1691, 
+        2552, 2699, 2787, 2393, 2858, 2241, 2260, 1872, 2656, 1512
+    );
     public function __construct($ind)
     {
         $this->index = $ind;
     }
     
     public function getPathImg(){
-        return "assets/img/p_img/" . ($this->index+1) . ".jpg"; 
+        return "assets/img/p_img/" . ($this->index) . ".jpg"; 
     }
-
     public function getDesc(){
-        return array_values($this->descArr)[$this->index+1];
+        return array_values($this->descArr)[$this->index];
     }
-    public $oldP;
-
     function getPrice(){
-        return $this->oldP;
+        return array_values($this->prices)[$this->index];
     }
 
     function getCat(){
-        return array_values($this->catArr)[$this->index+1];
+        return array_values($this->catArr)[$this->index];
     }
 }
 ?>
